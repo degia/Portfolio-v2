@@ -39,7 +39,7 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> NUVISTA </span>x DEGIA
+            <span className="text-glow text-foreground"> DEGIA </span>PARLOPA
           </span>
         </a>
 
