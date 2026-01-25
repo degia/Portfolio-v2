@@ -4,11 +4,11 @@ import { ArrowRight, ExternalLink, Github, Key } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A Beautiful landing page app using React & Tailwindcss",
-    image: "/projects/web-designselection.png",
-    tags: ["React", "TailwindCss"],
-    demoUrl: "#",
+    title: "Nuvista - Web Portfolio",
+    description: "Web portfolio design services",
+    image: "/projects/web-nuvista.png",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    demoUrl: "https://lumenza.infinityfree.me/",
     github: "#",
   },
   {

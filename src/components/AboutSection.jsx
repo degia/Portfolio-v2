@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, Database, User } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -19,20 +19,23 @@ export const AboutSection = () => {
               data-aos="zoom-in-up"
               data-aos-duration="1000"
             >
-              Passionate Web Developer & Data Analyst
+              Passionate Data Engineer & Data Analyst
             </h3>
             <p
               className="text-muted-foreground text-justify"
               data-aos="zoom-in-up"
               data-aos-duration="1000"
             >
-              I’m a versatile creator at the intersection of frontend
-              development and user-centered design. With a strong foundation in
-              modern web technologies like React, JavaScript, and Tailwind CSS,
-              I build responsive, performant, and accessible web experiences
-              that work seamlessly across devices. My design approach is rooted
-              in UI/UX principles—emphasizing clarity, usability, and visual
-              harmony.
+              Detail-oriented Data Analyst with 4+ years of hands-on experience
+              in transforming complex datasets into actionable business
+              insights. Combines strong analytical skills with full-stack
+              development expertise (PHP, JavaScript, Laravel, React) to build
+              intuitive, data-rich dashboards and internal tools for inventory,
+              procurement, and asset management. Proficient in SQL, data
+              visualization, and mobile-responsive UI design using TailwindCSS.
+              Passionate about creating self-contained, user-friendly analytics
+              applications that support operational efficiency—without depending
+              on third-party APIs
             </p>
 
             <p
@@ -76,12 +79,16 @@ export const AboutSection = () => {
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Database className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Development</h4>
+                  <h4 className="font-semibold text-lg">Data Engineer</h4>
                   <p className="text-muted-foreground">
-                    Data. Design. Development.
+                    Membangun dan Mengelola Infrastruktur Data. Mengembangkan
+                    dan Mengoptimalkan Database. Membuat ETL/ELT Processes.
+                    Memastikan Kualitas dan Keandalan Data. Mendukung Data
+                    Analyst & Tim Lain. Mengotomatisasi Alur Kerja Data. Bekerja
+                    dengan Teknologi Modern
                   </p>
                 </div>
               </div>
@@ -94,12 +101,16 @@ export const AboutSection = () => {
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                  <Database className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Personal</h4>
+                  <h4 className="font-semibold text-lg">Data Analyst</h4>
                   <p className="text-muted-foreground">
-                    Integiry, Objective, Smart
+                    Descriptive , Diagnostic , Predictive , Prescriptive
+                    Analytics. Data Visualization. Data Cleaning and
+                    Preparation. Statistical Analysis. Reporting and
+                    Dashboarding. Business Intelligence Tools. Collaboration
+                    with Stakeholders.
                   </p>
                 </div>
               </div>

@@ -20,8 +20,7 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delayed-3">
-            “Building intelligent systems, insightful data, and beautiful
-            experiences.” Code. Analyze. Design. Deliver.
+            "Accurate Analysis, Clear Visualization, Precise Solutions"
           </p>
 
           <div className="opacity-0 animate-fade-in-delayed-4">
