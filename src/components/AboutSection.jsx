@@ -61,7 +61,7 @@ export const AboutSection = () => {
               </a> */}
 
               <a
-                href="src/assets/docs/CV ATS -Degia Parlopa as Data Analyst.pdf"
+                href="/docs/data_analyst.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 "
                 data-aos="fade-up"
                 data-aos-duration="2000" target="_blank"
@@ -70,7 +70,7 @@ export const AboutSection = () => {
                 CV Data Analyst
               </a>
               <a
-                href="/docs/CV ATS -Degia Parlopa as IT Operation & Project.pdf"
+                href="/docs/it_operation_project.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 "
                 data-aos="fade-up"
                 data-aos-duration="2000" target="_blank"
