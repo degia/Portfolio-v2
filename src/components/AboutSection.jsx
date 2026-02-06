@@ -70,7 +70,7 @@ export const AboutSection = () => {
                 CV Data Analyst
               </a>
               <a
-                href="src/assets/docs/CV ATS -Degia Parlopa as IT Operation_Support.pdf"
+                href="/docs/CV ATS -Degia Parlopa as IT Operation & Project.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 "
                 data-aos="fade-up"
                 data-aos-duration="2000" target="_blank"
@@ -91,7 +91,7 @@ export const AboutSection = () => {
                   <Database className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Data Engineer</h4>
+                  <h4 className="font-semibold text-lg">IT Operation & Project</h4>
                   <p className="text-muted-foreground">
                     Membangun dan Mengelola Infrastruktur Data. Mengembangkan
                     dan Mengoptimalkan Database. Membuat ETL/ELT Processes.
