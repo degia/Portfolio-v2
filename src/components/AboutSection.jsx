@@ -51,23 +51,32 @@ export const AboutSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a
+              {/* <a
                 href="$contacts"
                 className="cosmic-button text-white"
                 data-aos="fade-up"
               >
                 {""}
                 Get In Touch
-              </a>
+              </a> */}
 
               <a
-                href="$contacts"
+                href="src/assets/docs/CV ATS -Degia Parlopa as Data Analyst.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 "
                 data-aos="fade-up"
-                ta-aos-duration="2000"
+                data-aos-duration="2000" target="_blank"
               >
                 {""}
-                Download CV
+                CV Data Analyst
+              </a>
+              <a
+                href="src/assets/docs/CV ATS -Degia Parlopa as IT Operation_Support.pdf"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 "
+                data-aos="fade-up"
+                data-aos-duration="2000" target="_blank"
+              >
+                {""}
+                CV IT Operation & Project
               </a>
             </div>
           </div>
