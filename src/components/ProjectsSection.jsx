@@ -71,7 +71,6 @@ export const ProjectSection = () => {
         <p
           className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto"
           data-aos="zoom-in-up"
-          data-aos-duration="1000"
         >
           Here re some of my recent projects. Each project was carefully crafted
           with attention to detail, performance, and user experience.
