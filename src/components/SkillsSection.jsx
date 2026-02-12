@@ -3,26 +3,26 @@ import { cn } from "../lib/utils";
 
 const skills = [
   // FrontEnd
-  { name: "HTML/CSS", level: 60, category: "frontend" },
-  { name: "JavaScript", level: 10, category: "frontend" },
-  { name: "React", level: 10, category: "frontend" },
+  { name: "CSS", level: 60, category: "frontend" },
+  { name: "Bootstrap", level: 10, category: "frontend" },
+  { name: "Javascript", level: 10, category: "frontend" },
   { name: "TypeScript", level: 1, category: "frontend" },
   { name: "Tailwind css", level: 10, category: "frontend" },
-  { name: "Next.js", level: 1, category: "frontend" },
+  { name: "React", level: 1, category: "frontend" },
 
   // BackEnd
-  { name: "Node.js", level: 10, category: "backend" },
-  { name: "Express", level: 1, category: "backend" },
-  { name: "MongoDB", level: 1, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
+  { name: "SQL Database", level: 10, category: "backend" },
+  { name: "Python", level: 1, category: "backend" },
+  { name: "PHP", level: 1, category: "backend" },
+  { name: "Rust", level: 65, category: "backend" },
   { name: "GraphQL", level: 0, category: "backend" },
 
   // Tools
-  { name: "Git/Github", level: 50, category: "tools" },
+  { name: "Git | Github", level: 50, category: "tools" },
   { name: "Docker", level: 30, category: "tools" },
-  { name: "Figma", level: 80, category: "tools" },
+  { name: "Figma | XD", level: 80, category: "tools" },
   { name: "VS Code", level: 60, category: "tools" },
-  { name: "Adobe AI/PS", level: 75, category: "tools" },
+  { name: "Adobe Design (PS, AI, etc", level: 75, category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
