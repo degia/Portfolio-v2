@@ -4,10 +4,11 @@ import { ArrowRight, ExternalLink, Github, Key } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Nuvista",
-    description: "This is a web service or portfolio for graphic design services by Nuvista Studio",
-    image: "/projects/web-nuvista.png",
-    tags: ["SCSS", "Bootstrap", "Js", "PHP"],
+    title: "EDA Parfumes",
+    description:
+      "EDA project analyzing the sales data of a perfume company, providing insights into customer behavior, sales trends, and product performance.",
+    image: "/projects/EDA Parfumes.jpg", //size_400x300
+    tags: ["Power BI", "Excel", "Power Query", "Python"],
     demoUrl: "https://portfolio-nuvista-v1.vercel.app/",
     github: "https://github.com/degia/portfolio-nuvista.v1",
   },
@@ -16,16 +17,17 @@ const projects = [
     title: "Personal Web Portfolio",
     description: "This is a portfolio website discussing all project data.",
     image: "/projects/web-portfolio.png",
-    tags: ["Vite", "React","Js", "TailwindCss"],
+    tags: ["Vite", "React", "Js", "TailwindCss"],
     demoUrl: "https://portfolio-gia1.vercel.app/",
     github: "https://github.com/degia/Portfolio-v1",
   },
   {
     id: 3,
     title: "Davista",
-    description: "This is a portfolio website discussing all project data and Devapps.",
+    description:
+      "This is a portfolio website discussing all project data and Devapps.",
     image: "/projects/web-project2.png",
-    tags: ["Vite", "React","Js", "TailwindCss"],
+    tags: ["Vite", "React", "Js", "TailwindCss"],
     demoUrl: "https://portfolio-gia2.vercel.app/",
     github: "https://github.com/degia/Portfolio-v2",
   },
@@ -101,12 +103,12 @@ export const ProjectSection = () => {
               </div>
 
               <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4 font-light">
+              <p className="text-muted-foreground text-sm m-3 font-light">
                 {project.description}
               </p>
 
-              <div className="flex justify-between items-center">
-                <div className="flex space-x-3 px-2">
+              <div className="flex justify-between items-center mt-4 px-3 mb-3">
+                <div className="flex m-2 space-x-3 px-2 mt-auto">
                   <a
                     href={project.demoUrl}
                     target="_blank"
