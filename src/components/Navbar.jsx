@@ -7,6 +7,7 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
+  { name: "Certificate", href: "#certif" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -30,7 +31,7 @@ export const Navbar = () => {
         "fixed w-full z-30 transition-all duration-300",
         isScrolled
           ? "py-5 bg-background/80 backdrop-blur-md shadow-xs"
-          : "py-5 bg-transparent"
+          : "py-5 bg-transparent",
       )}
     >
       <div className="container flex items-center justify-between mx-auto px-4">
@@ -68,7 +69,7 @@ export const Navbar = () => {
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
-              : "opacity-0  pointer-events-none"
+              : "opacity-0  pointer-events-none",
           )}
         >
           <div className="flex flex-col space-y-8 text-xl text-center">
