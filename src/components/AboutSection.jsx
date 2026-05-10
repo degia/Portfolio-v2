@@ -61,48 +61,28 @@ export const AboutSection = () => {
               </a> */}
 
               <a
-                href="/docs/data_analyst.pdf"
+                href="https://profiles-single-page-v2.vercel.app/"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 "
                 data-aos="fade-up"
-                data-aos-duration="2000" target="_blank"
+                data-aos-duration="2000"
+                target="_blank"
               >
                 {""}
-                CV Data Analyst
+                My Curriculum Vitae
               </a>
-              <a
-                href="/docs/it_operation_project.pdf"
+              {/* <a
+                href="https://profiles-single-page-v1.vercel.app/"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 "
                 data-aos="fade-up"
-                data-aos-duration="2000" target="_blank"
+                data-aos-duration="2000"
+                target="_blank"
               >
                 {""}
                 CV IT Operation & Project
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6">
-            <div
-              className="gradient-border p-6 card-hover"
-              data-aos="zoom-in-up"
-              data-aos-duration="1000"
-            >
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Database className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">IT Operation & Project</h4>
-                  <p className="text-muted-foreground">
-                    Membangun dan Mengelola Infrastruktur Data. Mengembangkan
-                    dan Mengoptimalkan Database. Membuat ETL/ELT Processes.
-                    Memastikan Kualitas dan Keandalan Data. Mendukung Data
-                    Analyst & Tim Lain. Mengotomatisasi Alur Kerja Data. Bekerja
-                    dengan Teknologi Modern
-                  </p>
-                </div>
-              </div>
-            </div>
-
             <div
               className="gradient-border p-6 card-hover"
               data-aos="zoom-in-up"
@@ -120,6 +100,31 @@ export const AboutSection = () => {
                     Preparation. Statistical Analysis. Reporting and
                     Dashboarding. Business Intelligence Tools. Collaboration
                     with Stakeholders.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="gradient-border p-6 card-hover"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Database className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">
+                    IT Operation & Project
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Asset & Hardware Management, Network Management & Security,
+                    Network Management, Server & Cloud Administration, Helpdesk
+                    Support, IT Project Management, Application Development &
+                    Maintenance, Documentation & Reporting, Compliance & Data
+                    Security, Team Collaboration & Communication, Performance
+                    Monitoring & Analysis, Vendor & Budget Management.
                   </p>
                 </div>
               </div>
