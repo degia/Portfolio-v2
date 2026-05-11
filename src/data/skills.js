@@ -108,7 +108,7 @@ export const skills = [
   },
   {
     name: "Network Security",
-    sub: "Firewall, IDS/IPS, VPN, etc",
+    sub: "Routing, Subnetting, Firewall, IDS/IPS, VPN, etc",
     level: 50,
     category: "Network",
   },
