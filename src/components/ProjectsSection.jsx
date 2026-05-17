@@ -57,7 +57,7 @@ export const ProjectSection = () => {
         </div>
 
         {/* 📦 Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((project) => (
               <div
@@ -65,7 +65,7 @@ export const ProjectSection = () => {
                 className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
                 data-aos="fade-up"
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-48 overflow-hidden ">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -103,7 +103,9 @@ export const ProjectSection = () => {
                       </span>
                     ))}
                   </div>
+                </div>
 
+                <div className="action-project p-5">
                   <div className="flex items-center justify-between mt-auto px-0">
                     {/* Link Demo & GitHub */}
                     <div className="flex items-center space-x-3 mt-auto pt-2">
@@ -119,6 +121,25 @@ export const ProjectSection = () => {
                           <ExternalLink size={20} />
                         </a>
                       )}
+
+                      {/* Kaggle */}
+                      {project.kaggle !== "#" && (
+                        <a
+                          href={project.kaggle}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-foreground/80 hover:text-primary transition-colors"
+                          aria-label={`Demo ${project.title}`}
+                        >
+                          <img
+                            width="25"
+                            height="25"
+                            src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/external-kaggle-an-online-community-of-data-scientists-and-machine-learners-owned-by-google-logo-tritone-tal-revivo.png"
+                            alt="kaggle"
+                          />
+                        </a>
+                      )}
+
                       {/* Link Github */}
                       {project.github !== "#" && (
                         <a
@@ -132,7 +153,7 @@ export const ProjectSection = () => {
                         </a>
                       )}
                       {/* Link Behance (optional) */}
-                      {project.behance && (
+                      {project.behance !== "#" && (
                         <a
                           href={project.behance}
                           target="_blank"
@@ -140,7 +161,12 @@ export const ProjectSection = () => {
                           className="text-foreground/80 hover:text-primary transition-colors"
                           aria-label={`Behance ${project.title}`}
                         >
-                          <GalleryVertical size={20} />
+                          <img
+                            width="30"
+                            height="30"
+                            src="https://img.icons8.com/color/48/behance.png"
+                            alt="behance"
+                          />
                         </a>
                       )}
                     </div>
