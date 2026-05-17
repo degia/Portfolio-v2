@@ -140,6 +140,24 @@ export const ProjectSection = () => {
                         </a>
                       )}
 
+                      {/* Google Drive */}
+                      {project.gdrive !== "#" && (
+                        <a
+                          href={project.gdrive}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-foreground/80 hover:text-primary transition-colors"
+                          aria-label={`Demo ${project.title}`}
+                        >
+                          <img
+                            width="25"
+                            height="25"
+                            src="https://img.icons8.com/color/48/google-drive--v2.png"
+                            alt="google-drive--v2"
+                          />
+                        </a>
+                      )}
+
                       {/* Link Github */}
                       {project.github !== "#" && (
                         <a
