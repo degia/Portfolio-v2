@@ -62,7 +62,7 @@ export const ProjectSection = () => {
             filteredProjects.map((project) => (
               <div
                 key={project.id}
-                className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+                className="group bg-card rounded-lg overflow-hidden shadow-xs"
                 data-aos="fade-up"
               >
                 <div className="h-48 overflow-hidden ">
