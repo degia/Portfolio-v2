@@ -113,6 +113,20 @@ export const projects = [
     github: "#",
     behance: "#",
   },
+  {
+    id: 9,
+    title: "Project Migrate Infrastructure [ASRI]",
+    description: "This dashboard serves not only as a log but also as a decision-making tool",
+    image: "/projects/dashboard_tradingmonidoting.jpg",
+    tags: ["Network", "IT Support", "IT Operation", "Project Management"],
+    categories: ["IT Project", "Network"],
+    update: "11 April 2026",
+    kaggle: "#",
+    gdrive: "https://bit.ly/gdrivefiles-excel1",
+    demoUrl: "#",
+    github: "#",
+    behance: "#",
+  },
   // ... project lainnya
 ];
 
