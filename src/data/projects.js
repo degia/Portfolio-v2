@@ -69,7 +69,7 @@ export const projects = [
     gdrive: "#",
     demoUrl: "#",
     github: "#",
-    behance: "https://www.behance.net/gallery/151315845/Logo-Design-Selection-(Self-Project)",
+    behance: "https://www.behance.net/gallery/250102731/Modern-Geometric-Logo-Brand-Identity-Design?platform=direct",
   },
   {
     id: 6,
