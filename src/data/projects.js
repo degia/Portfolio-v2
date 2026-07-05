@@ -155,6 +155,20 @@ export const projects = [
     github: "https://github.com/degia/Portfolio-v1",
     behance: "#",
   },
+  {
+    id: 12,
+    title: "Finaniapp",
+    description: "This is a portfolio website discussing all project data.",
+    image: "/projects/web_financiapp.jpg",
+    tags: ["Vite", "React", "Js", "TailwindCss"],
+    categories: ["Web Development", "Portfolio"],
+    update: "04 Mei 2026",
+    kaggle:"#",
+    gdrive: "#",
+    demoUrl: "https://portfolio-nuvista-v1.vercel.app/",
+    github: "https://github.com/degia/financia",
+    behance: "#",
+  },
   // ... project lainnya
 ];
 
