@@ -165,7 +165,7 @@ export const projects = [
     update: "05 Juli 2026",
     kaggle:"#",
     gdrive: "#",
-    demoUrl: "#",
+    demoUrl: "https://demo-financiapp.netlify.app/",
     github: "https://github.com/degia/financia",
     behance: "#",
   },
