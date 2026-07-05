@@ -8,12 +8,12 @@ export const FooterSection = () => {
         {""}
         &copy; {new Date().getFullYear()} Nuvista.tech All rights reserved.{" "}
       </p>
-      <a
+      {/* <a
         href="https://www.youtube.com/@PedroTechnologies"
         className="flex space-x-2 justify-center font-small"
       >
         <Youtube className="p-1" /> Source by ; Pedrotech.co
-      </a>
+      </a> */}
     </footer>
   );
 };
