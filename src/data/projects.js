@@ -169,6 +169,20 @@ export const projects = [
     github: "https://github.com/degia/financia",
     behance: "#",
   },
+  {
+    id: 13,
+    title: "TradeVizta",
+    description: "TradeVizta — a personal trading portfolio management app for XAUUSD/forex, built around Smart Money Concepts (SMC) framing.",
+    image: "/projects/web_tradevizta.jpg",
+    tags: ["Laravel", "PHP", "TailwindCss", "MySQL", "Laragon", "Livewire", "ApexCharts"],
+    categories: ["Web Development"],
+    update: "11 Juli 2026",
+    kaggle:"#",
+    gdrive: "#",
+    demoUrl: "https://demo-tradevizta.netlify.app/",
+    github: "https://github.com/degia/trading.app",
+    behance: "#",
+  },
   // ... project lainnya
 ];
 
