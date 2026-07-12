@@ -122,7 +122,7 @@ export const projects = [
     categories: ["IT Project", "Network"],
     update: "11 April 2026",
     kaggle: "#",
-    gdrive: "https://bit.ly/gdrivefiles-excel1",
+    gdrive: "https://bit.ly/gdrivefiles-excel3",
     demoUrl: "#",
     github: "#",
     behance: "#",
@@ -183,6 +183,20 @@ export const projects = [
     github: "https://github.com/degia/trading.app",
     behance: "#",
   },
+  {
+    id: 14,
+    title: "Project Disposal 500+ Assets [All ASRI Sites]",
+    description: "Draft Project Management Plan for Asset Disposal that is adjusted",
+    image: "/projects/prjc_asri2.jpg",
+    tags: ["Asset Management", "IT Operation", "Project Management"],
+    categories: ["IT Project", "Network"],
+    update: "18 Juni 2026",
+    kaggle: "#",
+    gdrive: "https://bit.ly/gdrivefiles-excel3",
+    demoUrl: "#",
+    github: "#",
+    behance: "#",
+  }
   // ... project lainnya
 ];
 
