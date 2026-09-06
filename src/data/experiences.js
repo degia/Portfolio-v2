@@ -10,7 +10,13 @@ const experience = [
     period: "Okt 2018 - Present",
     type: "Freelance",
     description:
-      "Jobdesk: Providing freelance services in graphic design, web development, and IT support for various clients and projects.",
+      "Providing freelance services in graphic design, web development, and IT support for various clients and projects.",
+    jobdesk: [
+      "Designing logos, posters, and marketing materials for various clients.",
+      "Building and maintaining responsive websites and landing pages.",
+      "Providing IT support and troubleshooting for client systems.",
+      "Consulting with clients to understand requirements and deliver solutions on time.",
+    ],
   },
   {
     id: 1,
@@ -21,7 +27,14 @@ const experience = [
     period: "Mar 2024 - Present",
     type: "Contract",
     description:
-      "Jobdesk: Overseeing IT operations and projects, managing IT infrastructure, coordinating with teams, and ensuring successful project delivery within the organization.",
+      "Overseeing IT operations and projects, managing IT infrastructure, coordinating with teams, and ensuring successful project delivery within the organization.",
+    jobdesk: [
+      "Leading and supervising IT operation & project teams.",
+      "Managing IT infrastructure, servers, and network administration.",
+      "Planning, monitoring, and delivering IT projects on schedule.",
+      "Coordinating with departments and vendors for project requirements.",
+      "Preparing documentation, reports, and budget management.",
+    ],
   },
   {
     id: 2,
@@ -32,7 +45,13 @@ const experience = [
     period: "Okt 2022 - Mar 2024",
     type: "Contract",
     description:
-      "Jobdesk: Managing IT infrastructure, troubleshooting network issues, and providing technical support to ensure smooth operations within the organization.",
+      "Managing IT infrastructure, troubleshooting network issues, and providing technical support to ensure smooth operations within the organization.",
+    jobdesk: [
+      "Managing and maintaining IT infrastructure and systems.",
+      "Troubleshooting network connectivity and hardware issues.",
+      "Providing technical support to end-users.",
+      "Performing system monitoring and preventive maintenance.",
+    ],
   },
   {
     id: 3,
@@ -43,7 +62,13 @@ const experience = [
     period: "Feb 2020 - Sep 2022",
     type: "Contract",
     description:
-      "Jobdesk: Designing marketing materials, social media graphics, and visual content for various campaigns.",
+      "Designing marketing materials, social media graphics, and visual content for various campaigns.",
+    jobdesk: [
+      "Designing marketing materials and promotional content.",
+      "Creating social media graphics and visual assets.",
+      "Developing brand identity and consistent visual design.",
+      "Collaborating with marketing teams on campaign concepts.",
+    ],
   },
   {
     id: 4,
@@ -54,7 +79,13 @@ const experience = [
     period: "Nov 2019 - Jan 2020",
     type: "Internship",
     description:
-      "Jobdesk: Troubleshooting hardware and network issues, assisting with software installations, and providing technical support to end-users.",
+      "Troubleshooting hardware and network issues, assisting with software installations, and providing technical support to end-users.",
+    jobdesk: [
+      "Troubleshooting hardware and network issues.",
+      "Assisting with software installation and configuration.",
+      "Providing technical support to end-users.",
+      "Documenting common issues and solutions.",
+    ],
   },
   
   {
@@ -66,7 +97,13 @@ const experience = [
     period: "Nov 2019 - Jan 2020",
     type: "Internship",
     description:
-      "Jobdesk: Designing marketing materials, social media graphics, and visual content for various campaigns.",
+      "Designing marketing materials, social media graphics, and visual content for various campaigns.",
+    jobdesk: [
+      "Designing marketing materials and promotional content.",
+      "Creating social media graphics and visual assets.",
+      "Supporting senior designers on campaign projects.",
+      "Preparing design files for print and web.",
+    ],
   },
 ];
 
