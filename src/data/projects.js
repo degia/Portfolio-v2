@@ -212,12 +212,12 @@ export const projects = [
     image: "/projects/web_aturaja.jpg",
     gallery: ["/projects/gall-web_aturaja1.jpg", "/projects/gall-web_aturaja2.jpg", "/projects/gall-web_aturaja3.jpg", "/projects/gall-web_aturaja4.jpg", "/projects/gall-web_aturaja5.jpg", "/projects/gall-web_aturaja6.jpg", "/projects/gall-web_aturaja7.jpg", "/projects/gall-web_aturaja8.jpg", "/projects/gall-web_aturaja9.jpg", "/projects/gall-web_aturaja10.jpg", "/projects/gall-web_aturaja11.jpg"],
     tags: ["Web Development", "IT Operation", "Project Management"],
-    categories: ["Web Development", "Network"],
-    update: "18 Juni 2026",
+    categories: ["Web Development"],
+    update: "07 September 2026",
     kaggle: "#",
     gdrive: "#",
-    demoUrl: "#",
-    github: "#",
+    demoUrl: "https://demo-aturaja.netlify.app/",
+    github: "https://github.com/degia/aturaja.com",
     behance: "#",
   }
   // ... project lainnya
