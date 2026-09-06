@@ -3,13 +3,22 @@ import {
   ArrowRight,
   ExternalLink,
   Github,
-  GalleryVertical,
+  ChevronLeft,
+  ChevronRight,
+  ZoomIn,
+  X,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/lib/utils";
 import { projects, categories } from "@/data/projects";
+
+const { img: MotionImg, div: MotionDiv } = motion;
 
 export const ProjectSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   // ✅ Filter: tampilkan project jika kategori aktif ada di array categories project
   const filteredProjects =
@@ -18,6 +27,42 @@ export const ProjectSection = () => {
       : projects.filter((project) =>
           project.categories.includes(activeCategory),
         );
+
+  const selectedGallery = selectedProject
+    ? selectedProject.gallery || [selectedProject.image]
+    : [];
+
+  const openGallery = (project) => {
+    setSelectedProject(project);
+    setActiveIndex(0);
+  };
+
+  const closeGallery = () => {
+    setSelectedProject(null);
+    setActiveIndex(0);
+  };
+
+  const goTo = (index) => {
+    setActiveIndex((index + selectedGallery.length) % selectedGallery.length);
+  };
+
+  useEffect(() => {
+    if (!selectedProject) return;
+    const len = selectedGallery.length;
+    document.body.style.overflow = "hidden";
+    const handleKey = (e) => {
+      if (e.key === "Escape") closeGallery();
+      if (e.key === "ArrowRight") setActiveIndex((prev) => (prev + 1) % len);
+      if (e.key === "ArrowLeft")
+        setActiveIndex((prev) => (prev - 1 + len) % len);
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKey);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedProject, activeIndex]);
 
   return (
     <section id="projects" className="py-24 px-4 relative">
@@ -65,12 +110,20 @@ export const ProjectSection = () => {
                 className="group bg-card rounded-lg overflow-hidden shadow-xs"
                 data-aos="fade-up"
               >
-                <div className="h-48 overflow-hidden ">
+                <div
+                  className="relative h-48 overflow-hidden cursor-pointer group/img"
+                  onClick={() => openGallery(project)}
+                >
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover/img:opacity-100">
+                    <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur text-white text-sm font-medium">
+                      <ZoomIn size={18} /> View Gallery
+                    </span>
+                  </div>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mt-4 px-6 mb-3"></div>
@@ -215,6 +268,105 @@ export const ProjectSection = () => {
           </a>
         </div>
       </div>
+
+      {/* Lightbox Carousel Modal */}
+      <AnimatePresence>
+        {selectedProject && (
+          <MotionDiv
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+            onClick={closeGallery}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+          >
+            <div
+              className="relative w-full max-w-4xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close */}
+              <button
+                onClick={closeGallery}
+                className="absolute -top-12 right-0 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+                aria-label="Close gallery"
+              >
+                <X className="h-6 w-6" />
+              </button>
+
+              {/* Title */}
+              <div className="text-center text-white mb-4">
+                <h3 className="text-lg font-semibold">
+                  {selectedProject.title}
+                </h3>
+                <p className="text-sm text-white/70">
+                  {activeIndex + 1} / {selectedGallery.length}
+                </p>
+              </div>
+
+              {/* Main Image */}
+              <div className="relative h-[60vh] min-h-[300px] rounded-xl overflow-hidden bg-black">
+                <AnimatePresence mode="wait">
+                  <MotionImg
+                    key={activeIndex}
+                    src={selectedGallery[activeIndex]}
+                    alt={`${selectedProject.title} ${activeIndex + 1}`}
+                    className="w-full h-full object-contain"
+                    initial={{ opacity: 0, x: 40 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -40 }}
+                    transition={{ duration: 0.25 }}
+                  />
+                </AnimatePresence>
+
+                {/* Prev / Next */}
+                {selectedGallery.length > 1 && (
+                  <>
+                    <button
+                      onClick={() => goTo(activeIndex - 1)}
+                      className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/40 hover:bg-black/70 text-white transition-colors"
+                      aria-label="Previous image"
+                    >
+                      <ChevronLeft className="h-7 w-7" />
+                    </button>
+                    <button
+                      onClick={() => goTo(activeIndex + 1)}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/40 hover:bg-black/70 text-white transition-colors"
+                      aria-label="Next image"
+                    >
+                      <ChevronRight className="h-7 w-7" />
+                    </button>
+                  </>
+                )}
+              </div>
+
+              {/* Thumbnails */}
+              {selectedGallery.length > 1 && (
+                <div className="flex justify-center gap-3 mt-4 flex-wrap">
+                  {selectedGallery.map((img, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setActiveIndex(index)}
+                      className={cn(
+                        "w-16 h-12 rounded-lg overflow-hidden border-2 transition-all duration-300",
+                        index === activeIndex
+                          ? "border-primary scale-105"
+                          : "border-transparent opacity-60 hover:opacity-100",
+                      )}
+                      aria-label={`Go to image ${index + 1}`}
+                    >
+                      <img
+                        src={img}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
