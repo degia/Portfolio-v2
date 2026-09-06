@@ -33,10 +33,16 @@ export const ExperienceSection = () => {
 
         <div className="relative border-l-2 border-primary/30 pl-6 space-y-10">
           {experiences.map((exp) => (
-            <div
+            <MotionDiv
               key={exp.id}
-              className="relative bg-card p-6 rounded-lg shadow-xs card-hover text-left"
+              className="relative bg-card p-6 rounded-lg shadow-xs text-left"
               data-aos="fade-up"
+              whileHover={{
+                y: -2,
+                scale: 1.02,
+                boxShadow: "0 12px 30px rgba(139,92,246,0.25)",
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <img
                 src={exp.logo}
@@ -72,7 +78,7 @@ export const ExperienceSection = () => {
               >
                 View Job Descriptions
               </button>
-            </div>
+            </MotionDiv>
           ))}
         </div>
       </div>

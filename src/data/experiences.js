@@ -29,11 +29,24 @@ const experience = [
     description:
       "Overseeing IT operations and projects, managing IT infrastructure, coordinating with teams, and ensuring successful project delivery within the organization.",
     jobdesk: [
-      "Leading and supervising IT operation & project teams.",
-      "Managing IT infrastructure, servers, and network administration.",
-      "Planning, monitoring, and delivering IT projects on schedule.",
-      "Coordinating with departments and vendors for project requirements.",
-      "Preparing documentation, reports, and budget management.",
+      "Lead a team in managing IT system infrastructure in accordance with SOPs and ISO 27001 standards.",
+      "Manage IT application systems (ERP Systems such as GP and Odoo, Kaspersky, Network Systems Monitoring, ManageEngine, Microsoft 365, etc.).",
+      "Monitor server and IT asset usage to forecast when upgrades or cost-efficiency measures are required.",
+      "Manage and monitor IT assets and software licenses using ManageEngine Service Desk Plus.",
+      "Provide direct technical guidance and support to the team serving over 100 internal users.",
+      "Analyze helpdesk ticket data to identify recurring issue trends and measure team performance against Service Level Agreements (SLAs).",
+      "Analyze data from project management tools (Jira, Microsoft Project) to identify common project bottlenecks.",
+      "Conduct cost-benefit and ROI (Return on Investment) analysis for all company IT projects.",
+      "Manage and coordinate internal IT projects.",
+      "Clean and standardize data extracted from various corporate databases to ensure it is accurate and ready for use.",
+      "Collaborate with the engineering team to maintain data integrity during ETL (Extract, Transform, Load) processes.",
+      "Visualize data using tools such as Tableau, Power BI, or advanced Excel dashboards to facilitate rapid decision-making by managers.",
+      "Forecast trends using historical data (e.g., sales figures or bandwidth usage) to predict future requirements.",
+      "Prepare monthly and annual IT management system reports.",
+      "Conduct security audits and risk assessments; respond to security incidents and breaches.",
+      "Analyze business processes to optimize IT operational systems and improve budget cost-efficiency.",
+      "Evaluate and select hardware, software, and network technologies based on company needs.",
+      "Manage monthly data reporting to transform data into strategic information for decision-making.",
     ],
   },
   {
@@ -47,10 +60,23 @@ const experience = [
     description:
       "Managing IT infrastructure, troubleshooting network issues, and providing technical support to ensure smooth operations within the organization.",
     jobdesk: [
-      "Managing and maintaining IT infrastructure and systems.",
-      "Troubleshooting network connectivity and hardware issues.",
-      "Providing technical support to end-users.",
-      "Performing system monitoring and preventive maintenance.",
+      "Monitor network performance and optimize network traffic.",
+      "Implement network monitoring systems using PRTG to monitor performance in real-time and identify potential issues.",
+      "Monitor on-premise and cloud server performance and optimize server utilization.",
+      "Monitor application system performance.",
+      "Implement and maintain security measures:",
+      "Network security (firewalls, routers)",
+      "User-side virus protection (antivirus)",
+      "User-side anti-phishing measures (Email Protection 365, Authenticator/2FA)",
+      "User device data security (BitLocker, BIOS protection)",
+      "Ensure data integrity, availability, and confidentiality.",
+      "Data backup and disaster recovery security.",
+      "Manage and control accounts and work devices:",
+      "End devices (device logins using Active Directory domains and front-desk office kiosks)",
+      "User accounts (management of Active Directory, Microsoft 365, and other software licenses)",
+      "Design and implement IT infrastructure based on company requirements.",
+      "Plan and execute infrastructure upgrades and migrations; install, configure, and maintain servers, operating systems, and middleware.",
+      "Plan and implement cloud migration and integration."
     ],
   },
   {
@@ -64,10 +90,14 @@ const experience = [
     description:
       "Designing marketing materials, social media graphics, and visual content for various campaigns.",
     jobdesk: [
-      "Designing marketing materials and promotional content.",
-      "Creating social media graphics and visual assets.",
-      "Developing brand identity and consistent visual design.",
-      "Collaborating with marketing teams on campaign concepts.",
+      "Develop creative ideas and concepts, and select the appropriate media and styles to meet objectives.",
+      "Create visual elements—such as logos, original imagery, and illustrations—that help convey the intended message.",
+      "Collaborate with marketing teams, copywriters, and other stakeholders to understand project requirements and deliver creative solutions.",
+      "Utilize industry-standard software, such as Adobe Creative Suite (Photoshop, Illustrator, InDesign), to create designs.",
+      "Ensure brand consistency across all designs and campaigns.",
+      "Manage multiple projects and deliver high-quality work within tight deadlines.",
+      "Incorporate feedback and revisions from clients or team members into designs.",
+      "Stay up-to-date with industry trends, design techniques, and software developments.",
     ],
   },
   {
@@ -81,10 +111,11 @@ const experience = [
     description:
       "Troubleshooting hardware and network issues, assisting with software installations, and providing technical support to end-users.",
     jobdesk: [
-      "Troubleshooting hardware and network issues.",
-      "Assisting with software installation and configuration.",
-      "Providing technical support to end-users.",
-      "Documenting common issues and solutions.",
+      "Help Desk Support: Responding to user inquiries and issues via phone, email, or in person.",
+      "Troubleshooting: Identifying and resolving technical issues related to hardware, software, networks, and systems.",
+      "Software and Operating System installation; setting up new devices for users; network installation (Layer 1 cabling, RJ45, LAN, office Wi-Fi).",
+      "Maintenance: Performing routine maintenance tasks such as updates, patching, and backups.",
+      "Email application system management (Zimbra Mail Server).",
     ],
   },
   
@@ -99,10 +130,10 @@ const experience = [
     description:
       "Designing marketing materials, social media graphics, and visual content for various campaigns.",
     jobdesk: [
-      "Designing marketing materials and promotional content.",
-      "Creating social media graphics and visual assets.",
-      "Supporting senior designers on campaign projects.",
-      "Preparing design files for print and web.",
+      "Design Banner Flyer for the website, Social media, etc.",
+      "Design banners for Facebook ads and Google ads.",
+      "Design Product promotion.",
+      "Design Email blast.",
     ],
   },
 ];
