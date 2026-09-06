@@ -1,37 +1,5 @@
-import { Briefcase, Calendar } from "lucide-react";
-
-const experiences = [
-  {
-    id: 1,
-    role: "Data Analyst",
-    company: "PT TechNusantara",
-    location: "Jakarta, Indonesia",
-    period: "2023 - Present",
-    type: "Full-time",
-    description:
-      "Analyzing business data, building dashboards with Power BI, and delivering actionable insights to support strategic decisions.",
-  },
-  {
-    id: 2,
-    role: "Data Analyst Intern",
-    company: "PT Digital Solusi",
-    location: "Bandung, Indonesia",
-    period: "2022 - 2023",
-    type: "Internship",
-    description:
-      "Supported data cleaning and preparation using Python and Excel, and created weekly performance reports for stakeholders.",
-  },
-  {
-    id: 3,
-    role: "IT Support",
-    company: "PT Karya Mandiri",
-    location: "Medan, Indonesia",
-    period: "2021 - 2022",
-    type: "Contract",
-    description:
-      "Provided hardware and network troubleshooting, managed asset inventory, and maintained internal documentation.",
-  },
-];
+import { Calendar } from "lucide-react";
+import { experiences } from "@/data/experiences";
 
 export const ExperienceSection = () => {
   return (
@@ -51,9 +19,11 @@ export const ExperienceSection = () => {
               className="relative bg-card p-6 rounded-lg shadow-xs card-hover text-left"
               data-aos="fade-up"
             >
-              <span className="absolute -left-[38px] top-6 p-2 rounded-full bg-primary/10">
-                <Briefcase className="h-4 w-4 text-primary" />
-              </span>
+              <img
+                src={exp.logo}
+                alt={`${exp.company} logo`}
+                className="absolute -left-[48px] top-6 h-12 w-12 rounded-full bg-card object-contain ring-2 ring-primary/30 shadow"
+              />
 
               <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                 <h3 className="text-xl font-semibold">{exp.role}</h3>
